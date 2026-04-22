@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Ramachandran — Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">KR</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Kiran Ramachandran</h1>
+      <p class="hero-title">
+        <span>Software Developer</span> &nbsp;·&nbsp; Systematic Trader &nbsp;·&nbsp; CS Graduate
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#about" class="btn-secondary">About Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">scroll</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label">Who I am</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a <strong>software developer and systematic trader</strong> based in Mumbai, India,
+          with a background in Mechanical Engineering from <strong>IIT Mumbai</strong> and a
+          Master's in Computer Science from <strong>Scaler Neovarsity–Woolf University</strong>.
+        </p>
+        <p>
+          I specialise in building <strong>automated trading systems</strong>, full-stack web
+          applications, and microservices architectures. Over a decade of systematic trading has
+          sharpened my ability to think in systems and optimize for performance.
+        </p>
+        <p>
+          Currently freelancing — helping proprietary traders automate and scale their strategies
+          while continuing to build software products.
+        </p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <a href="mailto:kiran.ram@gmail.com">kiran.ram@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <span>+44 7404 489696</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon">🐙</span>
+            <a href="https://github.com/KiranACD" target="_blank" rel="noopener">github.com/KiranACD</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">💼</span>
+            <a href="https://www.linkedin.com/in/kiran-ramachandran" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">13+</div>
+          <div class="stat-label">Years Trading</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Years Dev</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10×</div>
+          <div class="stat-label">Strategy Scale</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10×</div>
+          <div class="stat-label">API Speedup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">Career</p>
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-role">Software Developer</span>
+          <span class="timeline-period">Mar 2021 – Present</span>
+        </div>
+        <div class="timeline-company">Freelance · Mumbai, India</div>
+        <div class="timeline-body">
+          <ul>
+            <li>Developed automated trading applications that supported trade execution from multiple strategies across multiple brokers.</li>
+            <li>Provided automation solutions for proprietary traders, helping them increase strategy deployments by a factor of 10.</li>
+            <li>
+              Sample project:
+              <a href="https://github.com/KiranACD/Trading-Bot" target="_blank" rel="noopener">
+                Trading-Bot on GitHub ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-role">Systematic Trader</span>
+          <span class="timeline-period">Mar 2011 – Present</span>
+        </div>
+        <div class="timeline-company">Self Employed · Mumbai, India</div>
+        <div class="timeline-body">
+          <ul>
+            <li>Developed a risk premia harvesting strategy in the Indian stock market to capture equity risk premium returns using Nifty and Banknifty futures.</li>
+            <li>Built a portfolio of seasonality-based strategies exploiting Nifty and Banknifty options patterns.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">What I've built</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Resume Builder</span>
+          <a href="#" class="project-link" title="View Project">↗</a>
+        </div>
+        <div class="project-period">Mar 2024 – Apr 2024</div>
+        <div class="project-stack">
+          <span class="tag">React</span>
+          <span class="tag">jsPDF</span>
+        </div>
+        <div class="project-body">
+          <ul>
+            <li>Web app where users create ATS-friendly resumes and download them as PDFs.</li>
+            <li>Implemented a live PDF preview feature that updates as the resume is edited.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">E-Commerce Backend</span>
+          <a href="#" class="project-link" title="View Project">↗</a>
+        </div>
+        <div class="project-period">Dec 2023 – Feb 2024</div>
+        <div class="project-stack">
+          <span class="tag">SpringBoot</span>
+          <span class="tag">Spring Security</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">Elasticsearch</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="project-body">
+          <ul>
+            <li>Microservices platform covering Product Catalog, Payment Gateway, Order, and Notification services.</li>
+            <li>Optimised API response time from ~500 ms to ~50 ms via Redis caching.</li>
+            <li>Implemented event-driven email service with Kafka for large-scale notifications.</li>
+            <li>OAuth2-based auth microservice using Spring Security; Stripe payment gateway integration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Medium Clone</span>
+          <a href="#" class="project-link" title="View Project">↗</a>
+        </div>
+        <div class="project-period">May 2024 – Jun 2024</div>
+        <div class="project-stack">
+          <span class="tag">Next.js</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+        <div class="project-body">
+          <ul>
+            <li>Feature-rich blogging platform with dynamic routing, SSR, and API integration.</li>
+            <li>Responsive UI/UX with Tailwind CSS for cross-device accessibility.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">Toolkit</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-category-title">Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">HTML/CSS</span>
+          <span class="skill-pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-title">Frameworks</div>
+        <div class="skill-pills">
+          <span class="skill-pill">SpringBoot</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Next.js</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-title">Developer Tools</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">AWS</span>
+          <span class="skill-pill">VSCode</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-category-title">Libraries & Data</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Redis</span>
+          <span class="skill-pill">Kafka</span>
+          <span class="skill-pill">Elasticsearch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label">Academic Background</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-grid">
+
+      <div class="edu-card">
+        <div class="edu-degree">Master of Science</div>
+        <div class="edu-school">Scaler Neovarsity – Woolf University</div>
+        <div class="edu-field">Computer Science</div>
+        <div class="edu-meta">
+          <span>Bengaluru, India</span>
+          <span>Aug 2022 – Aug 2024</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-degree">Bachelor of Technology</div>
+        <div class="edu-school">Indian Institute of Technology</div>
+        <div class="edu-field">Mechanical Engineering</div>
+        <div class="edu-meta">
+          <span>Mumbai, India</span>
+          <span>Jun 2002 – May 2010</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:kiran.ram@gmail.com">Email</a>
+      <a href="https://github.com/KiranACD" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/kiran-ramachandran" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>Designed &amp; built by Kiran Ramachandran · 2024</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
